@@ -70,6 +70,7 @@ p {
 }
 .card > img {
   align-self: end;
+  width: 64px;
 }
 
 .top-border-red {
