@@ -1,3 +1,11 @@
+.fluid-type {
+  font-size: clamp(
+    var(--fluid-min, 1rem), 
+    calc(1rem + var(--fluid-target, 2vw)), 
+    var(--fluid-max, var(--fs-lg))
+  );
+}
+
 
 /* FLEXBOX */
 .flex-row {

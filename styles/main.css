@@ -50,17 +50,23 @@ p {
   max-width: 60ch;
 }
 
+/*************************/
+
 .card-container {
   gap: 4rem;
   inline-size: 100%;
   container: cardContainer / inline-size;
 }
 .card-container > header {
+  --fluid-min: 1.5rem;
+  --fluid-max: 2.25rem;
+  /* --fluid-target: 3vw; */
   gap: 0.8125rem;
 }
 .card {
   background-color: #FFFFFF;
   max-width: 350px;
+  max-height: 250px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -88,7 +94,7 @@ p {
 .top-border-blue {
   border-top: 4px solid var(--clr-primary-blue);
 }
-
+/* desktop */
 .card-grid {
   display: grid;
   grid-template-areas:
@@ -97,7 +103,6 @@ p {
   align-items: center;
   grid-gap: 1.857rem;
 }
-
 .supervisor {
   grid-area: supervisor;
   grid-row: 1 / 3;
@@ -113,6 +118,7 @@ p {
   grid-row: 1 / 3;
 }
 
+/* tablet */
 @container cardContainer (width < 1069px) {
   .card-grid {
     grid-template-areas:
@@ -124,13 +130,12 @@ p {
     grid-row: unset;
   }
 }
-
+/* mobile */
 @container cardContainer (width < 670px) {
   .card {
     max-width: unset;
   }
   .card-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     grid-template-areas:
       'supervisor'
       'builder'
