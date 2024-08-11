@@ -30,6 +30,14 @@
   align-items: start;
 }
 
+.align-end {
+  align-self: end;
+}
+
+.gap-6 {
+  gap: 0.375rem;
+}
+
 .gap-8 {
   gap: 0.5rem;
 }
@@ -46,6 +54,10 @@
   gap: 1.5rem;
 }
 
+.gap-30 {
+  gap: 1.875rem;
+}
+
 .gap-32 {
   gap: 2rem;
 }
@@ -54,8 +66,15 @@
   padding: 0;
 }
 
+.center {
+  text-align: center;
+}
 
 /* FONT WEIGHT */
+.fw-200 {
+  font-weight: 200;
+}
+
 .fw-500 {
   font-weight: 500;
 }
@@ -76,18 +95,6 @@
   font-family: 'Outfit';
 }
 
-.fs-12 {
-  font-size: calc(var(--fs-p) - 2px);
-}
-
-.fs-13 {
-  font-size: calc(var(--fs-p) - 1px);
-}
-
-.fs-14 {
-  font-size: var(--fs-p)
-}
-
 .fs-20 {
   font-size: 1.25rem;
 }
@@ -104,18 +111,14 @@
   font-style: normal;
 }
 
-.clr-txt-rose-800 {
-  color: var(--clr-brand-rose-800);
-}
-
-.clr-stone-600 {
-  color: var(--clr-brand-stone-600);
-}
-
-.clr-brown-800 {
-  color: var(--clr-brand-brown-800);
-}
-
 .uppercase {
   text-transform: uppercase;
+}
+
+
+
+/************************************/
+
+.fs-13 {
+  font-size: 13px;
 }

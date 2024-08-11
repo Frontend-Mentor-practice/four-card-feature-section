@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Four card feature section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/utility.css">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-  
-  <main>
-    <header>
-      <h1>Reliable, efficient delivery<strong>Powered by Technology</strong></h1>
-      <p>Our Artificial Intelligence powered tools use millions of project data points 
+
+  <main class="flex-column items-center [ card-container ]">
+    <header class="flex-column items-center gap-6 center">
+      <h1 class="fw-200">Reliable, efficient delivery <strong>Powered by Technology</strong></h1>
+      <p class="center">Our Artificial Intelligence powered tools use millions of project data points
         to ensure that your project is successful
       </p>
     </header>
 
-    <article>
-      <h2>Supervisor</h2>
-      <p>Monitors activity to identify project roadblocks</p>
-    </article>
+    <div class="flex-row items-center gap-30 wrap [ feature ]">
+      <article class="top-border-cyan [ card ]">
+        <header class="flex-column gap-6">
+          <h2>Supervisor</h2>
+          <p class="fs-13">Monitors activity to identify project roadblocks</p>
+        </header>
+        <img
+          src="./images/icon-supervisor.svg"
+          alt=""
+          loading="lazy"
+          width="64px" 
+        >
+      </article>
 
-    <article>
-      <h2>Team Builder</h2>
-      <p>Scans our talent network to create the optimal team for your project</p>
-    </article>
+      <div class="flex-column gap-30">
+        <article class="top-border-red [ card ]">
+          <header class="flex-column gap-6">
+            <h2>Team Builder</h2>
+            <p class="fs-13">Scans our talent network to create the optimal team for your project</p>
+          </header>
+          <img
+            src="./images/icon-team-builder.svg"
+            alt="" 
+            loading="lazy"
+            width="64px" 
+          >
+        </article>
 
-    <article>
-      <h2>Karma</h2>
-      <p>Regularly evaluates our talent to ensure quality</p>
-    </article>
+        <article class="top-border-orange [ card ]">
+          <header class="flex-column gap-6">
+            <h2>Karma</h2>
+            <p class="fs-13">Regularly evaluates our talent to ensure quality</p>
+          </header>
+          <img
+            src="./images/icon-karma.svg"
+            alt=""
+            loading="lazy"
+            width="64px" 
+          >
+        </article>
+      </div>
 
-    <article>
-      <h2>Calculator</h2>
-      <p>Uses data from past projects to provide better delivery estimates</p>
-    </article>
+      <article class="top-border-blue [ card ]">
+        <header class="flex-column gap-6">
+          <h2>Calculator</h2>
+          <p class="fs-13">Uses data from past projects to provide better delivery estimates</p>
+        </header>
+        <img
+          src="./images/icon-calculator.svg"
+          alt=""
+          loading="lazy"
+          width="64px"
+        >
+      </article>
+    </div>
   </main>
 
 </body>
+
 </html>
